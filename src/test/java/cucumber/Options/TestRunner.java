@@ -8,7 +8,8 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features = "src/test/java/features/PlaceValidation.feature",plugin="json:target/jsonReports/cucumber-report.json",
-				glue= {"stepDefinitions"} )
+				glue= {"stepDefinitions"} 
+		)
 
 //tags= "@DeletePlace")
 public class TestRunner {

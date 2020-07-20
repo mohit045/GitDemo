@@ -23,6 +23,7 @@ public class LoginStepDefinitions {
 	@Then("^Home page populated$")
 	public void home_page_populated() throws Throwable {
 		System.out.println("page updated");
+		System.out.println("page updated2");
 	}
 
 	@And("^Cards are displayed$")

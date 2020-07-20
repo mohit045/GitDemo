@@ -23,6 +23,7 @@ public class TestDataBuild {
 		types.add("Shoe park");
 		types.add("Shop");
 		p.setTypes(types);
+		
 		return p;
 	}
 	

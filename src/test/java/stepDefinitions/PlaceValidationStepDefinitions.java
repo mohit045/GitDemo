@@ -69,6 +69,7 @@ public class PlaceValidationStepDefinitions extends Utils {
 		req = given().spec(requestSpecification()).queryParam("place_id", place_id);
 		user_calls_something_with_post_http_request(api,"GET");
 		String actualName = getJsonPath(response, "name");
+		
 		assertEquals(expectedName, actualName);
 		
 		//

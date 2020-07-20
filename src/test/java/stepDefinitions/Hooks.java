@@ -15,6 +15,7 @@ public class Hooks {
 		psd.add_place_payload("Pragya","Odia","Rambha ganjam");
 		psd.user_calls_something_with_post_http_request("addPlaceAPI", "POST");
 		psd.verify_pace_id("Pragya", "getPlaceAPI");
+		System.out.println("added place");
 		}
 		
 	}

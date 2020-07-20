@@ -42,16 +42,18 @@ public class Utils {
 		return prop.getProperty(key);
 	}
 
-	public ResponseSpecification responseSpecification() {
-		responsespec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
-		return responsespec;
-
-	}
+//	public ResponseSpecification responseSpecification() {
+//		responsespec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
+//		return responsespec;
+//
+//	}
 	
 	public String getJsonPath(Response res,String key) {
 		String resp = res.asString();
 		JsonPath js = new JsonPath(resp);
+		System.out.println(js.get(key));
 		return js.get(key);
+		
 		
 		
 	}
