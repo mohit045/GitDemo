@@ -91,6 +91,14 @@ public class PlaceValidationStepDefinitions extends Utils {
 		}
 		
 		
+		
+		@And("Delete payload")
+		public void deleting_payload() throws IOException {
+		    // Write code here that turns the phrase above into concrete actions
+			req = given().spec(requestSpecification()).body(data.deletePayload(place_id));
+		}
+		
+		
 
 
 
